@@ -1,6 +1,7 @@
 # Silva_Eric_Capstone_Project
 
-Description: This website will be about wolf protection with different types of information including
+# Description:
+This website will be about wolf protection with different types of information including
 Legal and Illegal Hunting, Wolf Information, Protection and Parks, Hunter Stories, and resources/links for information. 
 There will also be a way to contact us to help save the wolves and different links that take you to a wolf center website.
 This website can be viewed and used by anyone as it is for you to see and learn more information to protect the wolves from hunting. 
