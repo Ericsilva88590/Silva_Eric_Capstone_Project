@@ -1,0 +1,763 @@
+*{box-sizing: border-box;}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000000;
+    color: #ffffff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 1000;
+    border-radius: 0 0 4px 4px;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+header, nav, main, footer {display:block;}
+body {
+    background-color: #eff1f1;
+    color: #000000;
+    /* Modern, professional system font stack */
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 3px dotted #000000;
+    margin: 10px;
+    padding: 15px;
+}
+header {
+    background-color: #37c9c9; 
+    padding: 20px; 
+    border-bottom: 2px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.site-logo {
+    height: 90px;
+    width: auto;
+    max-width: 120px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+h1 {
+    margin: 0;
+    color: #000000;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+p {
+    margin: 15px auto 20px auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 900px;
+}
+
+
+.page-subtitle {
+    margin: 15px auto 25px auto;
+    text-align: center;
+    font-size: 28px; 
+    font-weight: 700;
+    line-height: 1.4;
+    max-width: 900px;
+}
+
+.intro-text {
+    margin: 15px auto 25px;
+    text-align: center;
+    max-width: 900px;
+    line-height: 1.4;
+    padding: 0 20px;
+}
+
+h2 {
+    margin: 0.25em 0;
+    color: #30a0e0;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+}
+h3 {
+    margin: 0.25em 0;
+    color: #3b22c9;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+nav {text-align: center; 
+    margin: 10px 0; }
+.hero-image {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 3px solid #333333;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+#herohowl {
+    background-image: url(Images/WolfHowling.jpg);
+}
+#herohunter {
+    background-image: url(Images/Hunter.jpg);
+}
+#herowriting {
+    background-image: url(Images/Writing.jpg);
+}
+#heroparks {
+    background-image: url(Images/Parks.jpg);
+}
+
+.content-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.content-section h4 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.content-section h4 a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #f0f8ff;
+    border: 2px solid #0066cc;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.content-section h4 a:hover,
+.content-section h4 a:focus {
+    background-color: #0066cc;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex; /* Safari */
+    display: -ms-flexbox;  /* IE 10 */
+    display: flex;
+    -webkit-justify-content: center; /* Safari */
+    -ms-flex-pack: center;           /* IE 10 */
+    justify-content: center;
+    -webkit-flex-wrap: wrap; /* Safari */
+    -ms-flex-wrap: wrap;     /* IE 10 */
+    flex-wrap: wrap;
+}
+nav li {
+    margin: 0 10px;
+}
+    nav a {
+        text-decoration: none;
+        color: #000000;
+        padding: 8px 12px;
+        display: block;
+        font-weight: bold;
+        border-radius: 4px;
+        -webkit-transition: background-color 0.2s ease; /* Safari */
+        -moz-transition: background-color 0.2s ease;    /* Firefox */
+        -o-transition: background-color 0.2s ease;      /* Opera */
+        transition: background-color 0.2s ease;
+    }
+nav a:hover,
+nav a:focus {
+    background-color: #f0f0f0;
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+}
+nav a[aria-current="page"] {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+}
+
+footer a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+footer a:hover,
+footer a:focus {
+    color: #004499;
+    background-color: #f9f9f9;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+/* Hunter Stories Tables Styling */
+.tables-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 30px auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+.illegal-table,
+.legal-table {
+    flex: 1;
+    min-width: 300px;
+    border-collapse: collapse;
+    border: 3px solid #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.illegal-table th {
+    background-color: #ff4444;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #cc0000;
+}
+
+.legal-table th {
+    background-color: #44cc44;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #008800;
+}
+
+.illegal-point {
+    color: #cc0000;
+    padding: 12px 15px;
+    border: 2px dotted #ff4444;
+    background-color: #ffe6e6;
+    font-weight: bold;
+}
+
+.legal-point {
+    color: #008800;
+    padding: 12px 15px;
+    border: 2px dotted #44cc44;
+    background-color: #e6ffe6;
+    font-weight: bold;
+}
+
+.illegal-table td,
+.legal-table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.illegal-table tr:last-child td,
+.legal-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Hunting Image Styling */
+.hunting-image-container {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.hunting-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border: 3px solid #333333;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Wolves information two-column layout */
+.wolves-container {
+    display: flex;
+    gap: 28px;
+    max-width: 1100px;
+    margin: 20px auto 40px auto;
+    align-items: flex-start;
+}
+
+.wolf-details.left-column {
+    width: 720px;
+    flex: 0 0 720px;
+    margin-right: auto;
+}
+.wolf-type {margin-bottom: 26px;}
+.wolf-type {margin-bottom: 26px; display: flex; gap: 18px; align-items: flex-start;}
+.wolf-type h3 {font-size: 22px; margin-bottom: 8px; color: #1f3a3a; width:100%;}
+
+/* Per-page overrides for specific wolf headings */
+#red-wolves h3 {
+    color: #b22222; /* firebrick red */
+    font-weight: 700;
+}
+
+#grey-wolves h3 {
+    color: #6e6e6e; /* grey */
+    font-weight: 700;
+}
+
+#other-wolves h3 {
+    font-weight: 700; /* bold only */
+}
+.wolf-info {font-size: 17px; line-height: 1.6; color: #222222;}
+.wolf-img {
+    width: 220px;
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+    .wolves-container {flex-direction: column; padding: 0 12px;}
+    .wolf-details.left-column {width: 100%; flex: none; margin-right: 0;}
+    .wolf-type {flex-direction: column;}
+    .wolf-img {width: 100%; max-width: 100%;}
+}
+
+/* Protection and Parks page styles */
+.page-hero {
+    width: 100%;
+    max-width: 1100px;
+    margin: 18px auto;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    text-align: center; /* center the inline image */
+}
+
+.page-hero img.hero-img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 65%;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    .page-hero img.hero-img {
+        max-width: 95%;
+    }
+}
+
+.protection-grid {
+    max-width: 1100px;
+    margin: 22px auto;
+    display: flex;
+    gap: 24px;
+}
+.info-card {
+    flex: 1;
+    background: #ffffff;
+    border: 2px solid rgba(0,0,0,0.06);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+.info-card h3 {margin-top: 0; font-size: 20px; color: #1f3a3a;}
+.info-placeholder {font-size: 16px; color: #333333; line-height: 1.6;}
+
+
+.info-card.protection h3,
+.info-card.parks h3 {
+    color: #ff8c00; /* dark orange */
+}
+
+.help-box {
+    max-width: 1100px;
+    margin: 26px auto 60px auto;
+    background: #ffffff;
+    border: 2px solid rgba(0,0,0,0.06);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+.help-box h3 {margin-top: 0; font-size: 20px; color: #1f3a3a;}
+
+/* Make the Protection & Parks headings bold for emphasis */
+.info-card.protection h3,
+.info-card.parks h3,
+.help-box h3 {
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .protection-grid {flex-direction: column; padding: 0 12px;}
+    .page-hero {height: 180px;}
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        -webkit-flex-direction: column; /* Safari */
+        -ms-flex-direction: column;     /* IE 10 */
+        flex-direction: column;
+        -webkit-align-items: center; /* Safari */
+        -ms-flex-align: center;      /* IE 10 */
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 5px 0;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    nav a {
+        text-align: center;
+        width: 100%;
+    }
+    
+    body {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .site-logo {
+        height: 65px;
+        max-width: 85px;
+    }
+    
+    header {
+        padding: 15px 10px;
+        gap: 10px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    .hero-image {
+        height: 250px;
+        margin: 15px auto;
+        border: 2px solid #000000;
+        max-width: 95%;
+    }
+    
+    .content-section h4 {
+        font-size: 20px;
+    }
+    
+    .content-section h4 a {
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+    
+    /* Mobile responsive tables */
+    .tables-container {
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 10px;
+    }
+    
+    .illegal-table,
+    .legal-table {
+        min-width: 100%;
+    }
+    
+    .illegal-table th,
+    .legal-table th {
+        font-size: 20px;
+        padding: 12px;
+    }
+    
+    .illegal-point,
+    .legal-point {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .hunting-image {
+        max-width: 95%;
+        border: 2px solid #333333;
+    }
+    
+    /* Mobile responsive resources and form */
+    .resources-section {
+        padding: 10px;
+        margin: 20px auto;
+    }
+}
+
+/* Contact Form Styles */
+#contact {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+#contact h2 {
+  text-align: center;
+  color: #6eb4e0;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  text-align: center;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+#contact label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #d0e3f0;
+}
+
+#contact input,
+#contact select,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #666;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+#contact button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #3b7a57; 
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hunter Stories page scoped styles */
+.hunter-stories-section {
+    max-width: 920px;
+    margin: 28px auto 40px auto;
+    padding: 0 16px;
+    text-align: center;
+}
+.hunter-stories-section .story-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 14px 0 8px 0;
+}
+.hunter-stories-section .burgundy {
+    color: #800020; /* burgundy */
+}
+.hunter-stories-section .orange {
+    color: #ff8c00; /* orange */
+}
+.hunter-stories-section .story-placeholder {
+    margin: 8px auto 22px auto;
+    font-size: 18px;
+    max-width: 780px;
+    text-align: center;
+    color: #222222;
+}
+.hunter-stories-section .videos-title {
+    font-size: 22px;
+    margin-top: 20px;
+}
+.hunter-stories-section .video-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 30px 0;
+}
+.hunter-stories-section .video-links li { margin: 6px 0; }
+.hunter-stories-section .video-links a { color: #0066cc; text-decoration: underline; }
+
+
+.resources-bg {
+    background-image: url("Images/WolvesWoods.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #6eb4e0;
+}
+
+
+.resources-bg h1,
+.resources-bg h2,
+.resources-bg h3 {
+    color: #c0d6e4;
+    font-family: inherit;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.resources-bg h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.resources-bg h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.resources-bg p {
+    color: #c0d6e4;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    max-width: 720px;
+    margin: 0 auto 1.1em;
+}
+
+.resources-bg .resources-info-box ul {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.resources-bg a {
+    color: #c0d6e4;
+}
+
+.resources-bg a:hover,
+.resources-bg a:focus {
+    color: #ffffff;
+}
+
+.resources-bg nav a {
+    color: #6eb4e0;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.resources-bg nav a:hover,
+.resources-bg nav a:focus {
+    color: #ffffff;
+
+}
+
+/* Page-specific background for Protection & Parks page */
+
+.legal-page {
+    font-family: 'Playfair Display', Bold, serif;
+    color: #000000;
+}
+
+.legal-page header h1,
+.legal-page h1 {
+    margin: 0;
+    color: #000000;
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.legal-page p {
+    margin: 15px auto 25px auto;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    max-width: 900px;
+}
+
+.legal-page h2 {
+    margin: 1px;
+    color: #30a0e0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.legal-page h3 {
+    margin: 1px;
+    color: #3b22c9;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+.resources-bg header h1 {
+    color: #000000 !important;
+}
+
+
+.resources-section h3 {
+    color: #6eb4e0;
+}
+.resources-info-box {
+    background: rgba(30, 30, 30, 0.85);
+    border: 2px solid #c0d6e4;
+    border-radius: 18px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.3);
+    padding: 32px 28px 24px 28px;
+    margin: 40px auto 32px auto;
+    max-width: 750px;
+}
+.resources-section a {
+    color: #6eb4e0;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.resources-section a:hover,
+.resources-section a:focus {
+    color: #ffffff;
+    background-color: #3b7a57;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+#contact button:hover {
+  background-color: #4c996f;
+}
+
+.sr-only {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    border: 0; padding: 0; margin: -1px;
+}
