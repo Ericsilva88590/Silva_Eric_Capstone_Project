@@ -5,7 +5,7 @@ This website will be about wolf protection with different types of information i
 Legal and Illegal Hunting, Wolf Information, Protection and Parks, Hunter Stories, and resources/links for information. 
 There will also be a way to contact us to help save the wolves and different links that take you to a wolf center website.
 This website can be viewed and used by anyone as it is for you to see and learn more information to protect the wolves from hunting. 
-Here is the link for you to view the website: 
+Here is the link for you to view the website: https://ericsilva88590.github.io/Silva_Eric_Capstone_Project/
 # Instructions: 
 1. The code listed is in the docs folder everything will be found there including the main code for each website.
 2. Project.css will be the file that has all of the outlines, color, theme, boxes etc.
