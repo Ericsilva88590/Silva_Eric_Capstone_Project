@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="project.css">
+<script src="lightbox.js" defer></script>
 <!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js">
 </script>
@@ -24,6 +25,7 @@
             <li><a href="Wolves_information.html" aria-current="page">Wolf Information</a></li>
             <li><a href="Protection_and_Parks.html">Protection and Parks</a></li>
             <li><a href="Hunter_Stories.html">Hunter Stories</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
             <li><a href="Resources.html">Resources</a></li>
         </ul>
     </nav>
@@ -31,28 +33,52 @@
         <h2>Wolf Information</h2>
         <p>Here you can find information about wolves</p>
 
+        <h3 class="wolf-section-title">Wolf species</h3>
         <div class="wolves-container">
             <section class="wolf-details left-column">
-                <h3 class="sr-only">Wolf species</h3>
                 <article id="red-wolves" class="wolf-type">
-                    <h3>Red wolves</h3>
-                    <img src="Images/RedWolf.jpg" alt="Red wolf" class="wolf-img">
-                    <p class="wolf-info">[Red wolves information here]</p>
+                    <figure class="wolf-figure">
+                        <img src="Images/RedWolf.jpg" alt="Red wolf" class="wolf-img">
+                        <figcaption class="caption-small">Red wolf: a critically endangered species native to the southeastern United States.</figcaption>
+                    </figure>
+                    <div class="wolf-type-content">
+                        <h3>Red wolves</h3>
+                        <p class="wolf-info">[Red wolves information here]</p>
+                    </div>
                 </article>
 
                 <article id="grey-wolves" class="wolf-type">
-                    <h3>Grey wolves</h3>
-                    <img src="Images/GreyWolf.jpg" alt="Grey wolf" class="wolf-img">
-                    <p class="wolf-info">[Grey wolves information here]</p>
+                    <figure class="wolf-figure">
+                        <img src="Images/GreyWolf.jpg" alt="Grey wolf" class="wolf-img">
+                        <figcaption class="caption-small">Grey wolf: the most widespread wolf species, known for its adaptability.</figcaption>
+                    </figure>
+                    <div class="wolf-type-content">
+                        <h3>Grey wolves</h3>
+                        <p class="wolf-info">[Grey wolves information here]</p>
+                    </div>
                 </article>
 
                 <article id="other-wolves" class="wolf-type">
-                    <h3>Other wolves</h3>
-                    <img src="Images/ManedWolf.jpg" alt="Maned wolf" class="wolf-img">
-                    <p class="wolf-info">[Information about other wolf species here]</p>
+                    <figure class="wolf-figure">
+                        <img src="Images/ManedWolf.jpg" alt="Maned wolf" class="wolf-img">
+                        <figcaption class="caption-small">Maned wolf: a unique South American canid with long legs and reddish fur.</figcaption>
+                    </figure>
+                    <div class="wolf-type-content">
+                        <h3>Other wolves</h3>
+                        <p class="wolf-info">[Information about other wolf species here]</p>
+                    </div>
                 </article>
             </section>
         </div>
+
+        <section class="audio-container" aria-label="Wolves howling audio">
+            <h3>Wolves Howling</h3>
+            <audio controls>
+                <source src="Images/WolvesHowling.mp3" type="audio/mpeg">
+                <source src="Images/WolvesHowling.ogg" type="audio/ogg">
+                <a href="Images/WolvesHowling.mp3">Download</a> (MP3)
+            </audio>
+        </section>
     </main>
    <footer>
         <small><i>
