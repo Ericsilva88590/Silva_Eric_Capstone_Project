@@ -389,8 +389,7 @@ footer a:focus {
     .wolf-type {flex-direction: column;}
     .wolf-img {width: 100%; max-width: 100%;}
     .wolf-figure {width: 100%; max-width: 100%;}
-}
-
+    }
 /* Protection and Parks page styles */
 .page-hero {
     width: 100%;
@@ -398,10 +397,73 @@ footer a:focus {
     margin: 18px auto;
     padding: 0;
     background: none;
-    border: none;
-    border-radius: 0;
-    text-align: center; 
 }
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 8px;
+}
+.product {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 8px 6px;
+    border-bottom: 1px solid #eee;
+}
+.product-thumb {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-right: 12px;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+.product .description { flex: 1; }
+.actions { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+.add-to-cart {
+    background: #f6f6f6;
+    border: 1px solid #d0d0d0;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.add-to-cart:hover { background: #ececec; }
+.buy-button {
+    background: #0070f3;
+    color: #ffffff;
+    padding: 8px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+.buy-button:hover { opacity: 0.95; }
+
+.cart-panel {
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin-top: 16px;
+    max-width: 360px;
+    background: #fff;
+    border-radius: 6px;
+}
+.cart-total-row { margin-top: 12px; display: flex; justify-content: space-between; align-items: center; }
+.checkout-row { margin-top: 12px; display: flex; gap: 8px; align-items: center; }
+.checkout-label { font-size: 0.9em; }
+#checkout-mode { padding: 6px; }
+#cart-checkout, #resume-checkout { padding: 10px 14px; border-radius: 4px; border: 0; cursor: pointer; }
+#cart-checkout { background: #5469d4; color: white; }
+#resume-checkout { background: #28a745; color: white; margin-left: 8px; display: none; }
+ .cart-actions { margin-top: 12px; }
+
+@media (max-width: 700px) {
+    .product { flex-direction: column; align-items: flex-start; }
+    .product-thumb { width: 100%; height: auto; max-height: 320px; margin-right: 0; }
+    .cart-panel { max-width: 100%; }
+}
+/* end products/cart styles */
 
 /* Gallery grid styles */
 .gallery-grid {
@@ -753,11 +815,39 @@ footer a:focus {
 
 }
 
-/* Page-specific background for Protection & Parks page */
+    body {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+    }
 
-.legal-page {
+
+.legal-page { 
     font-family: 'Playfair Display', Bold, serif;
     color: #000000;
+}
+
+.legal-page .add-to-cart,
+.legal-page .buy-button,
+.legal-page #cart-checkout,
+.legal-page #resume-checkout {
+    padding: 16px 24px !important;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+    min-width: 150px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.legal-page .buy-button { background: #1f59ff; color: #fff; text-decoration: none; font-weight:700; box-shadow: 0 6px 18px rgba(31,89,255,0.18); }
+.legal-page .add-to-cart { background: #eef2ff; color: #0f172a; border: 1px solid #dbeafe; }
+.legal-page #cart-checkout { background: #0b132b; color: #fff; font-weight:700; }
+.legal-page #resume-checkout { background: #0b7a4d; color: #fff; }
+
+@media (max-width: 720px) {
+    .legal-page .add-to-cart, .legal-page .buy-button, .legal-page #cart-checkout, .legal-page #resume-checkout { width: 100% !important; min-width: 0; }
+    .actions { display:flex; flex-direction:column; gap:10px; width:100%; }
 }
 
 .legal-page header h1,
@@ -881,3 +971,7 @@ footer a:focus {
     box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 .lightbox-close:hover { background: #f0f0f0; }
+
+.caption-small { font-size: xx-small; font-style: italic; margin: 4px 0 12px 0; color: #333333; }
+.resources-links { max-width: 700px; margin: 0 auto 30px auto; text-align: left; font-size: 1.2em; line-height: 1.7; }
+.resources-summary { font-size: 1.1em; text-align: left; max-width: 700px; margin: 0 auto; }
