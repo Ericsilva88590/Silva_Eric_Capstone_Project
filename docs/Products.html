@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf Protection - Products</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="lightbox.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="wrapper">
+        <header>
+            <img src="Images/WolfProtectionLogo.png" alt="Wolf Protection Logo" class="site-logo">
+            <h1>Wolf Protection</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Legal_and_Illegal.html">Legal and Illegal</a></li>
+                <li><a href="Wolves_information.html">Wolf Information</a></li>
+                <li><a href="Protection_and_Parks.html">Protection and Parks</a></li>
+                <li><a href="Hunter_Stories.html">Hunter Stories</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Products.html" aria-current="page">Products</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-content">
+            <h2>Products</h2>
+            <p class="intro-text">Explore our range of products designed to promote wolf conservation and awareness.</p>
+
+            <section class="products">
+                <!-- Product 1 -->
+                <div class="product" data-id="p1" data-price-id="price_12345" data-price="25.00">
+                    <img src="Images/GreyWolf.jpg" alt="Wolf Poster" class="product-thumb">
+                    <div class="description">
+                        <h3>Wolf Poster — Funny</h3>
+                        <p>$25.00</p>
+                        <div class="actions">
+                            <button class="add-to-cart">Add to cart</button>
+                            <a class="payment-link buy-button" href="https://buy.stripe.com/test_00w28t2QjcWZb3690kfQI00" target="_blank" rel="noopener">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product" data-id="p2" data-price-id="price_23456" data-price="25.00">
+                    <img src="Images/WolfHowling.jpg" alt="Wolf Poster" class="product-thumb">
+                    <div class="description">
+                        <h3>Wolf Poster — Woods Howling</h3>
+                        <p>$25.00</p>
+                        <div class="actions">
+                            <button class="add-to-cart">Add to cart</button>
+                            <a class="payment-link buy-button" href="https://buy.stripe.com/test_6oU3cxez1bSV8UY6ScfQI01" target="_blank" rel="noopener">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product" data-id="p3" data-price-id="price_34567" data-price="25.00">
+                    <img src="Images/WolvesWoods.jpg" alt="Wolf Poster" class="product-thumb">
+                    <div class="description">
+                        <h3>Wolf Poster — Howling</h3>
+                        <p>$25.00</p>
+                        <div class="actions">
+                            <button class="add-to-cart">Add to cart</button>
+                            <a class="payment-link buy-button" href="https://buy.stripe.com/test_8x29AV3Un8GJ3AEa4ofQI02" target="_blank" rel="noopener">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside id="cart" class="cart-panel">
+                <h3>Your Cart</h3>
+                <div id="cart-items"><!-- populated by JS --></div>
+                <div class="cart-total-row">
+                    <strong>Total:</strong>
+                    <div id="cart-total">$0.00</div>
+                </div>
+                <div class="checkout-row">
+                    <label class="checkout-label">Checkout mode:</label>
+                    <select id="checkout-mode">
+                        <option value="tabs">Open links in new tabs (default)</option>
+                        <option value="sequential">Sequential (same tab, resume available)</option>
+                    </select>
+                </div>
+                <div class="cart-actions">
+                    <button id="cart-checkout">Checkout Cart</button>
+                    <button id="resume-checkout">Resume Pending Checkouts</button>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <small><i>
+                Contact information: 404-888-8888, or email us at Wolfprotectionwebsite@example.com
+                Copyright &copy; 2025 Wolf Protection. All rights reserved.
+                <a href="mailto:Wolfprotectionwebsite@example.com">Wolfprotectionwebsite@example.com</a>
+            </i></small>
+        </footer>
+
+    </div>
+
+    <script src="cart.js" defer></script>
+</body>
+</html>
