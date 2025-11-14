@@ -1,0 +1,6 @@
+{
+  "name": "wolf-shop-placeholder",
+  "version": "1.0.0",
+  "description": "Placeholder package.json. Server example removed; the site is client-only.",
+  "private": true
+}
