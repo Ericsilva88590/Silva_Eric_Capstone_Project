@@ -1,5 +1,6 @@
 *{box-sizing: border-box;}
 
+
 /* Site-wide layout and utilities (applies to multiple pages: Homepage.html, Products.html, Gallery.html, Resources.html, etc.) */
 
 .skip-link {
@@ -1047,3 +1048,4 @@ footer a:focus {
 
 .resources-links { max-width: 700px; margin: 0 auto 30px auto; text-align: left; font-size: 1.2em; line-height: 1.7; }
 .resources-summary { font-size: 1.1em; text-align: left; max-width: 700px; margin: 0 auto; }
+
