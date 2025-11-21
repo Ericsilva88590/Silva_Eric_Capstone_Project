@@ -1,5 +1,7 @@
 *{box-sizing: border-box;}
 
+/* Site-wide layout and utilities (applies to multiple pages: Homepage.html, Products.html, Gallery.html, Resources.html, etc.) */
+
 .skip-link {
     position: absolute;
     top: -40px;
@@ -15,6 +17,8 @@
     top: 0;
 }
 
+/* Header + navigation (Homepage.html edits reflected here) */
+
 header, nav, main, footer {display:block;}
 body {
     background-color: #eff1f1;
@@ -26,6 +30,7 @@ body {
     margin: 10px;
     padding: 15px;
 }
+/* Header styles (Homepage.html) */
 header {
     background-color: #37c9c9; 
     padding: 20px; 
@@ -52,6 +57,8 @@ h1 {
     text-align: center;
     font-weight: 700;
 }
+
+/* Content & hero sections for Homepage.html (hero-image IDs below correspond to Homepage.html edits) */
 
 
 p {
@@ -123,11 +130,19 @@ nav {text-align: center;
 #heroparks {
     background-image: url(Images/Parks.jpg);
 }
+#herogallery {
+    background-image: url(Images/ManedWolf.jpg);
+}
+#heroproducts {
+    background-image: url(Images/GreyWolf.jpg);
+}
 
 .content-section {
     margin: 30px 0;
     text-align: center;
 }
+
+/* Navigation styles (site-wide) */
 
 .content-section h4 {
     margin: 10px 0;
@@ -217,6 +232,7 @@ footer a:focus {
 }
 
 /* Hunter Stories Tables Styling */
+/* Styles applied for Hunter_Stories.html */
 .tables-container {
     display: flex;
     justify-content: space-between;
@@ -296,6 +312,7 @@ footer a:focus {
 }
 
 /* Wolves information two-column layout */
+/* Wolves_information.html edits: layout and wolf-type styling (moved from inline / added caption-small usage) */
 .wolves-container {
     display: flex;
     gap: 28px;
@@ -309,7 +326,6 @@ footer a:focus {
     flex: 0 0 720px;
     margin-right: auto;
 }
-.wolf-type {margin-bottom: 26px;}
 .wolf-type {margin-bottom: 26px; display: flex; gap: 18px; align-items: flex-start;}
 .wolf-type h3 {font-size: 22px; margin: 0 0 8px 0; color: #1f3a3a; text-align: left; width: auto;}
 .wolf-type-content {flex: 1;}
@@ -337,7 +353,16 @@ footer a:focus {
 #other-wolves h3 {
     font-weight: 700; 
 }
-.wolf-info {font-size: 17px; line-height: 1.6; color: #222222;}
+.wolf-info {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #666666; 
+    text-align: left;
+    margin: 0 0 1rem 0;
+    max-width: 70ch; 
+    hyphens: auto;
+    word-wrap: break-word;
+}
 .wolf-img {
     width: 100%;
     height: auto;
@@ -346,7 +371,6 @@ footer a:focus {
     flex-shrink: 0;
 }
 
-/* Figure and caption styling for wolf entries */
 .wolf-figure {
     display: flex;
     flex-direction: column;
@@ -363,6 +387,13 @@ footer a:focus {
     margin: 4px 0 12px 0;
     color: #333333;
     text-align: left;
+}
+
+.content-section .caption-small {
+    text-align: center;
+    display: block;
+    margin: 8px auto 16px auto;
+    max-width: 720px;
 }
 
 /* Audio container styling */
@@ -390,6 +421,7 @@ footer a:focus {
     .wolf-img {width: 100%; max-width: 100%;}
     .wolf-figure {width: 100%; max-width: 100%;}
     }
+/* Protection_and_Parks.html edits: page hero and protection grid styling */
 /* Protection and Parks page styles */
 .page-hero {
     width: 100%;
@@ -399,6 +431,7 @@ footer a:focus {
     background: none;
 }
 .products {
+/* Products.html edits: product listing and cart UI (add-to-cart, buy-button, cart-panel) */
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -442,6 +475,7 @@ footer a:focus {
 .buy-button:hover { opacity: 0.95; }
 
 .cart-panel {
+/* Products.html - cart panel (client-side cart UI) */
     border: 1px solid #ddd;
     padding: 12px;
     margin-top: 16px;
@@ -466,6 +500,7 @@ footer a:focus {
 /* end products/cart styles */
 
 /* Gallery grid styles */
+/* Gallery.html edits: grid and gallery-item styling; zoomable images and lightbox hooks */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -496,6 +531,7 @@ footer a:focus {
     margin-top: 8px;
 }
 
+
 .page-hero img.hero-img {
     display: block;
     margin: 0 auto;
@@ -514,7 +550,7 @@ footer a:focus {
     max-width: 1100px;
     margin: 22px auto;
     display: flex;
-    gap: 24px;
+    flex-direction: column; 
 }
 .info-card {
     flex: 1;
@@ -526,6 +562,20 @@ footer a:focus {
 }
 .info-card h3 {margin-top: 0; font-size: 20px; color: #1f3a3a;}
 .info-placeholder {font-size: 16px; color: #333333; line-height: 1.6;}
+
+.info-card p,
+.info-placeholder {
+    text-align: left;
+    margin: 0 0 1em 0;
+    max-width: none;
+    hyphens: auto;
+    word-break: normal;
+}
+
+.info-card.protection .info-placeholder,
+.help-box .info-placeholder {
+    color: #666666;
+}
 
 
 .info-card.protection h3,
@@ -658,6 +708,7 @@ footer a:focus {
 }
 
 /* Contact Form Styles */
+/* Resources.html edits: contact form styling and accessibility-focused visuals */
 #contact {
   background-color: #1e1e1e;
   color: #f5f5f5;
@@ -721,11 +772,7 @@ footer a:focus {
     padding: 0 16px;
     text-align: center;
 }
-.hunter-stories-section .story-title {
-    font-size: 30px;
-    font-weight: 800;
-    margin: 14px 0 8px 0;
-}
+
 .hunter-stories-section .burgundy {
     color: #800020; 
 }
@@ -737,7 +784,7 @@ footer a:focus {
     font-size: 18px;
     max-width: 780px;
     text-align: center;
-    color: #222222;
+    color: #666666; 
 }
 .hunter-stories-section .videos-title {
     font-size: 22px;
@@ -753,6 +800,7 @@ footer a:focus {
 
 
 .resources-bg {
+/* Resources.html background and theme edits: resources page background and thematic colors */
     background-image: url("Images/WolvesWoods.jpg");
     background-size: cover;
     background-position: center;
@@ -822,6 +870,7 @@ footer a:focus {
     }
 
 
+/* Legal_and_Illegal.html edits: page-specific typography and amplified action buttons */
 .legal-page { 
     font-family: 'Playfair Display', Bold, serif;
     color: #000000;
@@ -920,8 +969,31 @@ footer a:focus {
 }
 
 /* Lightbox (image zoom) */
+/* Gallery.html - Lightbox (image zoom overlay styles, used with lightbox.js) */
 .zoomable { cursor: zoom-in; }
 .zoomable:hover { filter: brightness(0.97); }
+
+.field-error {
+    color: #b22222;
+    font-size: 0.95rem;
+    margin-top: 6px;
+}
+
+.site-alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 12px auto;
+    max-width: 1100px;
+    box-sizing: border-box;
+}
+.site-alert .site-alert-message { flex: 1; }
+.site-alert-success { background: #e6f8ef; border: 1px solid #6ccf8f; color: #1b5e2b; }
+.site-alert-error { background: #fdecea; border: 1px solid #f5a4a4; color: #6b0b0b; }
+.site-alert .site-alert-close { background: transparent; border: none; font-size: 1.2rem; cursor: pointer; }
 
 .lightbox-overlay {
     position: fixed;
@@ -942,6 +1014,7 @@ footer a:focus {
     flex-direction: column;
     align-items: center;
 }
+
 .lightbox-content img {
     max-width: 90vw;
     max-height: 80vh;
@@ -972,6 +1045,5 @@ footer a:focus {
 }
 .lightbox-close:hover { background: #f0f0f0; }
 
-.caption-small { font-size: xx-small; font-style: italic; margin: 4px 0 12px 0; color: #333333; }
 .resources-links { max-width: 700px; margin: 0 auto 30px auto; text-align: left; font-size: 1.2em; line-height: 1.7; }
 .resources-summary { font-size: 1.1em; text-align: left; max-width: 700px; margin: 0 auto; }
