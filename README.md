@@ -9,7 +9,8 @@ everything from the color, outline, theme, boxes, font, center, headings, image 
 page to make everything look like a website. The cart.js is what it says which is the code to make the add to cart function and cart buttons to where 
 you can buy products that are listed in the webpage. The lightbox.js is a lightbox for images across the website like overlay of the image or zooming
 in of an image. The package.json is just a file that is used for script execution or project identification like running the package of the website. 
-In this case it is the wolf shop.
+In this case it is the wolf shop. Then the contact.js which is additions to the contact feature to prompt up that it was successful or needs something 
+like minimum of 10 character message or email needed etc.
 
 # Description:
 This website will be about wolf protection with different types of information including
@@ -27,6 +28,6 @@ This website can be viewed and used by anyone as it is for you to see and learn 
 
 # Instructions: 
 1. The code listed is in the docs folder everything will be found there including the main code for each website.
-2. It includes the css, json, lightbox.js, cart.js, and all of the html files for the each website page. 
+2. It includes the css, json, lightbox.js, cart.js, contact.js and all of the html files for the each website page. 
 3. All you have to do is click on the link to view the website! https://ericsilva88590.github.io/Silva_Eric_Capstone_Project/
 4. Lastly enjoy this is my capstone project that is working and still needing information but that will be it!
