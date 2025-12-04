@@ -16,8 +16,8 @@ This website will be about wolf protection with different types of information i
 Legal and Illegal Hunting, Wolf Information, Protection and Parks, Hunter Stories, and resources/links for information. 
 There will also be a way to contact us to help save the wolves and different links that take you to a wolf center website.
 This website can be viewed and used by anyone as it is for you to see and learn more information to protect the wolves from hunting. 
-* Homepage will include buttons with their designated image to view every page from the website with their information.
-* Legal and Illegal page will have two boxes that is color designated red and green with legal and illegal hunting and their information to go along with it.
+* **Homepage** will include buttons with their designated image to view every page from the website with their information.
+* **Legal and Illegal** page will have two boxes that is color designated red and green with legal and illegal hunting and their information to go along with it.
 * Wolf information page will include wolf species with their information about that wolf type like a red wolf or grey wolf.
 * Protection and parks page will include protection against wolves information as well as parks that have wolves and what you can do to help out wolves!
 * Hunter stories page will include a life changing story with videos that can be found on hunters and wolf hunting.
