@@ -18,12 +18,12 @@ There will also be a way to contact us to help save the wolves and different lin
 This website can be viewed and used by anyone as it is for you to see and learn more information to protect the wolves from hunting. 
 * **Homepage** will include buttons with their designated image to view every page from the website with their information.
 * **Legal and Illegal** page will have two boxes that is color designated red and green with legal and illegal hunting and their information to go along with it.
-* Wolf information page will include wolf species with their information about that wolf type like a red wolf or grey wolf.
-* Protection and parks page will include protection against wolves information as well as parks that have wolves and what you can do to help out wolves!
-* Hunter stories page will include a life changing story with videos that can be found on hunters and wolf hunting.
-* Gallery page will include every picture that was used in the website with a capable zoom in feature to see the picture bigger and better.
-* Resources page will have helpful links and information that you can click on to go to that website. It will also have a join the pack by contacting us to help out or volunteer!
-* Lastly the Products page with products listed for you to buy and help out the wolves!
+* **Wolf information** page will include wolf species with their information about that wolf type like a red wolf or grey wolf.
+* **Protection and parks** page will include protection against wolves information as well as parks that have wolves and what you can do to help out wolves!
+* **Hunter stories** page will include a life changing story with videos that can be found on hunters and wolf hunting.
+* **Gallery** page will include every picture that was used in the website with a capable zoom in feature to see the picture bigger and better.
+* **Resources** page will have helpful links and information that you can click on to go to that website. It will also have a join the pack by contacting us to help out or volunteer!
+* **Products** page with products listed for you to buy and help out the wolves!
 
 # Instructions: 
 1. The code listed is in the docs folder everything will be found there including the main code for each website.
